@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- *  * main - "Print programming is like building a multilingual puzzle"
- *   *
- *    * Return: 0 Always (success)
- *     */
+ *  * main - function begins the entry point of the program
+ *   * Return: function ends , returning zero 
+ *    */
 int main(void)
 {
 		puts("\"Programming is like building a multilingual puzzle");
