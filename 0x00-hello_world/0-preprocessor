@@ -1,2 +1,3 @@
 #!/bin/bash
+#A script that runs a C file($CFILE) through the preprocessor and save the result into another file(c).
 gcc -E $CFILE -o c
