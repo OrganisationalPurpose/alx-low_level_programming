@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains my 0x01-variables_if_else_while C Programming language  projects done at ALX Africa.
+This repository contains my 0x01-variables_if_else_while C Programming language projects done at ALX Africa.
 
 ## Learning Objectives That I Met
 

@@ -1,3 +1,14 @@
+/**
+ * A program will assign a random number to the variable (n) each time it is executed whether the number stored in the variable (n) is positive or negative.
+ * The variable n stores a different value every time this program is run
+ * The output of the program should be:
+     The number, followed by:
+     -If the number is greater than 0: is positive
+     -If the number is 0: is zero
+     -If the number is less than 0: is negative
+     -A new line
+ */
+
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
