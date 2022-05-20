@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains my 0x00-hello_world C programming language projects at ALX Africa.
+This repository contains my 0x00-hello_world C programming language projects done at ALX Africa.
 
 ## Learning Objectives That I Met
 
