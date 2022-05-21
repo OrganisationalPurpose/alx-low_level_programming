@@ -1,18 +1,10 @@
-/**
- * I only used the putchar function
- * All code should is in the main function 
- * I used putchar three times in my code
- */
-
 #include <stdio.h>
-
 /**
  *main - Entry point
  *
  *Description: Print lower and upper alphabet on the same line
  *Return: 0
  */
-
 int main(void)
 {
 int c;
