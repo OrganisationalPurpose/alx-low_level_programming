@@ -1,85 +1,51 @@
 #include <stdio.h>
-#include "main.h"
-
+#include <stdlib.h>
+#include <string.h>
 /**
- * _atoi - converts a string to an integer
- * @s: string to be converted
- *
- * Return: the int converted from the string
- */
-int _atoi(char *s)
+ * num_checker - checks if a given char is number or not
+ * @a: char to be checked
+ * Return: 1, if its a number, else 0
+ **/
+int num_checker(char *a)
 {
-	int i, d, n, len, f, digit;
+	int i, num, len;
 
 	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	while (i < len && f == 0)
+	num = 0;
+	len = strlen(a);
+	while (i < len)
 	{
-		if (s[i] == '-')
-			++d;
-
-		if (s[i] >= '0' && s[i] <= '9')
+		if (a[i] < '0' || a[i] > '9')
 		{
-			digit = s[i] - '0';
-			if (d % 2)
-				digit = -digit;
-			n = n * 10 + digit;
-			f = 1;
-			if (s[i + 1] < '0' || s[i + 1] > '9')
-				break;
-			f = 0;
+			return (-1);
 		}
+		else
+			num = num * 10 + (a[i] - '0');
 		i++;
 	}
-
-	if (f == 0)
-		return (0);
-
-	return (n);
+	return (num);
 }
-
 /**
- * main - adds two positive number
- * @argc: number of arguments
- * @argv: array of arguents
- *
- * Return: 0 (Success), or 1 (Success)
- */
+ * main - add positive numbers
+ * @argc: arguement count
+ * @argv: array of pointers to arguement strings
+ * Return: result of addition or 1
+ **/
 int main(int argc, char *argv[])
 {
-	int sum, num, i, j, k;
+	int i, num, sum;
 
 	sum = 0;
-
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		num = num_checker(argv[i]);
+		if (num == -1)
 		{
-			if (argv[i][j] > '9' || argv[i][j] < '0')
-			{
-				puts("Error");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
+		sum += num;
 	}
-
-	for (k = 1; k < argc; k++)
-	{
-		num = _atoi(argv[k]);
-		if (num >= 0)
-		{
-			sum += num;
-		}
-	}
-
 	printf("%d\n", sum);
 	return (0);
 }

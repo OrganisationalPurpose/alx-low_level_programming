@@ -1,31 +1,47 @@
-#inckude "main.h"
+#include <stdio.h>
 /**
-* main - entry block
-* @void: no argument
-* Return: 0 Success
-*/
+ * main - entry point
+ *
+ * Return: void
+ */
+
 int main(void)
 {
-	int i;
 
-	for (i = 1; i < 100; i++)
-		if (i % 15 == 0)
-		{
-			printf("FizzBuzz ");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else
-		{
-			printf("%d ", i);
-		}
-	printf("Buzz");
-	printf("\n");
-	return (0);
+int p = 100;
+int i;
+
+i = 1;
+while (i <= p)
+{
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz ");
+}
+
+else if (i % 3 == 0)
+{
+printf("Fizz ");
+}
+
+else if (i % 5 == 0)
+{
+if (i < p)
+printf("Buzz ");
+
+else
+printf("Buzz");
+}
+
+else
+{
+printf("%i ", i);
+}
+
+i++;
+
+
+}
+printf("\n");
+return (0);
 }
