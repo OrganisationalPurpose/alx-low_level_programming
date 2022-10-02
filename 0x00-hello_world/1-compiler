@@ -8,4 +8,4 @@
 
 #Example: if the C file is main.c, the output file should be main.o
 
-gcc -c $CFILE
+gcc -c $CFILE -o main.o
