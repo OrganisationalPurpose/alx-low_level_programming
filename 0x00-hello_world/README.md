@@ -33,3 +33,5 @@ This repository contains 0x00-hello_world
 + [The Binary Result of compiling ```6-size.c``` using ```gcc 6-size.c -m32 -o size32 2> /tmp/32```](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/size32)
 
 + [The Binary Result of compiling ```6-size.c``` using ```gcc 6-size.c -m64 -o size64 2> /tmp/64```](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/size64)
+
++ [a script that generates the assembly code (Intel syntax) of a C code, saved in the variable ```$CFILE``` and save it in an output file.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/100-intel)
