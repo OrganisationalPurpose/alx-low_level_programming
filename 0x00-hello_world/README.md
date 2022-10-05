@@ -17,3 +17,7 @@ This repository contains 0x00-hello_world
 + [Source file compiled by 1-compiler](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/1-main.c)
 
 + [The Binary Result of running 1-compiler](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/main.o)
+
++ [A script that generates the assembly code of a C code, ```main.c``` saved in the variable ```$CFILE```, and save it in an output file,```main.s```.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/2-assembler)
+
++ [The Binary Result of running 2-assembler](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/main.s)
