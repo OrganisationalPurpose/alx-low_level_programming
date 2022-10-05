@@ -25,3 +25,5 @@ This repository contains 0x00-hello_world
 + [A script that compiles a C file, saved in the variable ```$CFILE``` and creates an executable named ```cisfun```](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/3-name)
 
 + [A C program that prints exactly ```"Programming is like building a multilingual puzzle```, followed by a new line using the function ```puts```.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/4-puts.c)
+
++ [A C program that prints exactly ```with proper grammar, but the outcome is a piece of art,```, using the printf and followed by a new line.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/5-print.c)
