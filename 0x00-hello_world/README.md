@@ -6,9 +6,9 @@ This repository contains 0x00-hello_world
 
 ### Contents
 
-+ [A script that runs a C file, ```$CFILE```, through the preprocessor and save the result into another file, ```C```.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor)
++ [A script that runs a C file, saved in the variable ```$CFILE```, through the preprocessor and save the result into another file, ```C```.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor)
 
-+ [Source file compiled by 0-preprocessor](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/main.c)
++ [Source file compiled by 0-preprocessor, 2-assembler](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/main.c)
 
 + [The Binary Result of running the script in 0-preprocessor](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/c)
 
@@ -21,3 +21,5 @@ This repository contains 0x00-hello_world
 + [A script that generates the assembly code of a C code, ```main.c``` saved in the variable ```$CFILE```, and save it in an output file,```main.s```.](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/2-assembler)
 
 + [The Binary Result of running 2-assembler](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/main.s)
+
++ [A script that compiles a C file, saved in the variable ```$CFILE``` and creates an executable named ```cisfun```](https://github.com/IanoNjuguna/alx-low_level_programming/blob/main/0x00-hello_world/3-name)
