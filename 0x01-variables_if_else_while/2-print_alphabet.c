@@ -1,9 +1,3 @@
-/**
- *A program that prints the alphabet in lowercase, followed by a new line using the putchar function 
- *All code is in the main function
- *I have only used the putchar function twice
- */
-
 #include <stdio.h>
 
 /**
