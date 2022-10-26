@@ -3,10 +3,13 @@
 #include <stdio.h>
 
 /**
- *main - Entry
- *
- *Return: Always 0 (success/correct)
+ * main - Entry point
+ * Description: Program assigns a random number to n each time it is executed.
+ * It then prints whether the number stored in n is zero, positive or negative.
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
  */
+
 int main(void)
 {
 int n;
@@ -14,17 +17,22 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-if (n > 1)
-{
-	printf("%d is positive\n", n);
-}
-else if (n < 0)
+/* if loop execution */
+if (n < 0)
 {
 	printf("%d is negative\n", n);
 }
-else
+
+/* else if loop execution */
+else if (n == 0)
 {
 	printf("%d is zero\n", n);
 }
-return (0);
+
+/*else loop execution*/
+else
+{
+	printf("%d is positive\n", n);
+}
+return	(0);
 }
