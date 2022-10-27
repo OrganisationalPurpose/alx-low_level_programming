@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * Description: Print lower and upper alphabet on the same line
- * Return: 0
+ * Return: Always 0 (Success)
  * Author: IanoNjuguna
  */
 
