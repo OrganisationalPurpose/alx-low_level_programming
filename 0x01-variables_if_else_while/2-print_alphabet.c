@@ -8,12 +8,14 @@
 
 int main(void)
 {
-int c;
+char z;
+z = 'a';
 
-for (c = 0; c < 26; ++c)
-putchar('a' + c);
-
+while (z <= 'z')
+{
+	putchar(z);
+	z++;
+}
 putchar('\n');
-
 return (0);
 }
