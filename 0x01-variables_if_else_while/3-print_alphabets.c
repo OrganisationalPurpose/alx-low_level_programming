@@ -1,23 +1,26 @@
 # include <stdio.h>
 
 /**
- *main - Entry point
- *
- *Description: Print lower and upper alphabet on the same line
- *Return: 0
+ * main - Entry point
+ * Description: Print lower and upper alphabet on the same line
+ * Return: 0
+ * Author: IanoNjuguna
  */
 
 int main(void)
 {
-int c;
+char z = 'a';
+char Z = 'A';
 
-for (c = 0; c < 26; ++c)
+while (z <= 'z')
 {
-	putchar('a' + c);
+	putchar(z);
+	z++;
 }
-for (c = 0; c < 26; ++c)
+while (Z <= 'Z')
 {
-	putchar('A' + c);
+	putchar(Z);
+	Z++;
 }
 putchar('\n');
 return (0);
