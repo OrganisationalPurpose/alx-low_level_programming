@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * Description: Print all single digit numbers of base 10
+ * Description: Print all single integer numbers of base 10
  * stating from 0, followed by a new line
  * Return: Always 0 (Success)
  * Author: IanoNjuguna
@@ -12,18 +12,20 @@
 
 int main(void)
 {
-char c;
+int integer;
 
-for (c = '0'; c <= '9'; c++)
+for (integer = '0'; integer <= '9'; integer++)
 {
-	putchar(c);
+	putchar(integer);
 
-	if (c != '9')
+	if (integer != '9')
+
 	{
 		putchar(',');
 		putchar(' ');
 	}
 }
 putchar('\n');
+
 return (0);
 }
