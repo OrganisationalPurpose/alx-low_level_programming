@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * Description: prints _putchar, followed by a new line.
- * Return: nothing, return void
+ * Return: Always 0 (Success)
  * Author: IanoNjuguna
  */
 
