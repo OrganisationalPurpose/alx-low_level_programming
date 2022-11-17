@@ -16,8 +16,8 @@ int main(void)
 	{
 		for (integer_b = integer_a + 1; integer_b < 10; integer_b++)
 		{
-			putchar((integer_a % 10) + '0');
-			putchar((integer_b % 10) + '0');
+			putchar(integer_a + '0');
+			putchar(integer_b + '0');
 
 			if (integer_a == 8 && integer_b == 9)
 			continue;
