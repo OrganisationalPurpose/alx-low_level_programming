@@ -3,8 +3,9 @@
 
 /**
  * main - Entry point
- *
+ * Description: prints _putchar, followed by a new line.
  * Return: nothing, return void
+ * Author: IanoNjuguna
  */
 
 int main(void)
