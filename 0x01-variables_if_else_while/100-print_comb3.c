@@ -5,6 +5,7 @@
  *		in ascending order, separated by comma followed by a space
  *
  *Return: Always 0 (Success).
+ *Author: IanoNjuguna
  */
 
 int main(void)
