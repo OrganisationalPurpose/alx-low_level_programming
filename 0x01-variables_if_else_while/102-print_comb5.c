@@ -6,34 +6,35 @@
  *Return: Always 0 (Success)
  *Author: IanoNjuguna
  */
+
 int main(void)
 {
-	int a, b, x, z;
+	int c, i, k, j;
 
-	for (a = 48; a <= 57; a++)
+	for (c = 48; c <= 57; c++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (i = 48; i <= 57; i++)
 		{
-			for (x = 48; x <= 57; x++)
+			for (k = 48; k <= 57; k++)
 			{
-				for (z = 48; z <= 57; z++)
+				for (j = 48; j <= 57; j++)
 				{
-					if (((x + z) > (a + b) &&  x >= a) || a < __x86_64)
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
 					{
-						putchar(a);
-						putchar(b);
+						putchar(c);
+						putchar(i);
 						putchar(' ');
-						putchar(x);
-						putchar(z);
-					if (a + b + x + z == 227 && a == 57)
-					{
-						break;
-					}
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
+						putchar(k);
+						putchar(j);
+						if (c + i + k + j == 227 && c == 57)
+						{
+							break;
+						}
+						else
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
