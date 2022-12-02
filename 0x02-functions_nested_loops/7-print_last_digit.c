@@ -1,29 +1,29 @@
 #include "main.h"
 
 /**
- * print_last_digit - last digit
+ * print_last_digit - Returns the value of the last digit
  *
- * @n: The int to print
- * Return: Always 0.
+ * @j: The last digit of this value is what we're looking for
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
  */
 
-int print_last_digit(int n)
-
+int print_last_digit(int j)
 {
-int last_digit;
+	int last_digit;
 
-if (n < 0)
-{
-last_digit = (-1 * (n % 10));
-_putchar (last_digit + '0');
-return (last_digit);
+	if (j < 0)
+	{
+		last_digit = (-1 * (j % 10));
+		_putchar (last_digit + '0');
+		return (last_digit);
+	}
+
+	else
+	{
+		last_digit = (j % 10);
+		_putchar (last_digit + '0');
+		return (last_digit);
+	}
 }
 
-else
-{
-last_digit = (n % 10);
-_putchar (last_digit + '0');
-return (last_digit);
-}
-
-}
