@@ -5,7 +5,8 @@
  * _abs - value absolute
  *
  * @n: The int to print
- * Return: Always 0.
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
  */
 
 int _abs(int n)
