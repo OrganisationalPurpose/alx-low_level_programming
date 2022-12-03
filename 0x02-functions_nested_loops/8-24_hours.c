@@ -3,7 +3,7 @@
 /**
  * jack_bauer - prints every minute of Jack Bauer's day (00:00 - 23:59)
  *
- * @j: Contains the value to be printed
+ * @j && @k: Contains the value to be printed
  * Return: Always 0 (Success)
  * Author: IanoNjuguna
  */
