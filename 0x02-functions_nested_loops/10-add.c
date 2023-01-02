@@ -2,13 +2,18 @@
 #include <stdio.h>
 
 /**
- * add -prints add two numbers
- *@i: print int i
- *@k: print int k
- * Return: Always 0.
+ * add - adds two integers and returns the result
+ *
+ * @i: First integer value
+ * @j: Second integer value
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
  */
 
-int add(int i, int k)
+int add(int i, int j)
 {
-return (i + k);
+	int x = i + j;
+
+	return (x);
 }
+
