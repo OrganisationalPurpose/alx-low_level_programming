@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
  * sum - print sum for multiples of 3 and 5 of natural numbers below 1024
  *
