@@ -22,3 +22,15 @@ void sum(void)
 	printf("%d\n", sum);
 }
 
+/**
+ * main - entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	sum();
+	return (0);
+}
+
