@@ -1,16 +1,17 @@
 #include "main.h"
 /**
- * main - main
- * Return: 0
+ * main - entry point for test file
+ *
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
  */
 
 int main(void)
 {
-int i;
-i = 0;
+	int i = 30;
 
-positive_or_negative(i);
+	positive_or_negative(i);
 
-return (0);
-
+	return (0);
 }
+
