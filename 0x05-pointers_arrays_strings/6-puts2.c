@@ -12,7 +12,7 @@
 void puts2(char *str)
 {
 	int length = strlen(str);
-	char *end = str + length - 1;
+	char *end = str + length;
 
 	while (str < end)
 	{
