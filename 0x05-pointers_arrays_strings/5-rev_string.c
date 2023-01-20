@@ -3,28 +3,34 @@
 #include <stdio.h>
 
 /**
- *  * rev_string - reverses a string
- *   * @s:input
- *    * Return: Always 0.
-*/
+ * rev_string - Reverses a string
+ * @s: Pointer to the string
+ * Return: Always 0.
+ */
 void rev_string(char *s)
 {
-	char *t = s;
-	char n[1000];
-	short c = 0;
+	int len = strlen(s);
+	char *start = s;
+	char *end = s + len - 1;
+	char temp;
 
-	while (*s != '\0')
+	while (start < end)
 	{
-		n[c] = *s;
-		s++;
-		c++;
-	}
-	c = 0;
+		temp = *start;
+		*start = *end;
+		*end = temp;
 
-	while (s > t)
-	{
-		s--;
-		*s = n[c];
-		c++;
+		start++;
+		end--;
 	}
+}
+
+int main(void)
+{
+    char s[10] = "My School";
+
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
+    return (0);
 }
