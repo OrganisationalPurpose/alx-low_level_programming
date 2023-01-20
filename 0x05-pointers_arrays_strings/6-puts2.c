@@ -3,21 +3,23 @@
 #include <string.h>
 
 /**
- *  * puts2 - prints every other character of a string
- *   * followed by a new line
- *    *@str:input
- *     * Return: Always 0.
-*/
+ * puts2 - prints every other character of a string followed by a new line
+ * @str: Pointer to the string
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
+ */
+
 void puts2(char *str)
 {
-	int i;
+	int length = strlen(str);
+	char *end = str + length - 1;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str < end)
 	{
-		if (i % 2 == 0)
-		{
-			putchar(str[i]);
-		}
+		printf("%c", *str);
+		str = str + 2;
 	}
-	putchar('\n');
+
+	printf("\n");
 }
+
