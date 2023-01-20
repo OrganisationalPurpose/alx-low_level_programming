@@ -3,32 +3,38 @@
 #include <string.h>
 
 /**
- *  * puts_half -prints the second half
- *   * followed by a line
- *    * @str:input
- *     * Return: Always 0.
-*/
+ * puts_half -prints the second half followed by a line
+ * @str: Pointer to the string
+ * Return: Always 0 (Success)
+ * Author: IanoNjuguna
+ */
+
 void puts_half(char *str)
 {
-	int i, len, half;
+	int length = strlen(str);
+	char *end = str + length;
 
-	len = strlen(str);
-
-	if (len % 2 == 0)
+	if (length % 2 == 0)
 	{
-		half = len / 2;
-		for (i = half; str[i] != '\0'; i++)
+		char *mid = str + length / 2;
+
+		while (mid < end)
 		{
-			putchar(str[i]);
+			printf("%c", *mid);
+			mid++;
 		}
 	}
 	else
 	{
-		half = (len + 1) / 2;
-		for (i = half; str[i] != '\0'; i++)
+		char *mid = str + (length - 1) / 2;
+
+		while (mid < end)
 		{
-			putchar(str[i]);
+			printf("%c", *mid);
+			mid++;
 		}
 	}
-	putchar('\n');
+
+	printf("\n");
 }
+
