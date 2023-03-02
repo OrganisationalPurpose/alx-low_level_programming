@@ -15,7 +15,7 @@ int main(void)
 
 	for (sequence = 0; sequence <= 49; sequence++)
 	{
-		if (sequence < 48)
+		if (sequence <= 48)
 		{
 			printf("%ld, ", i);
 
