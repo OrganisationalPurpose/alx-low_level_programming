@@ -1,14 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints the number of arguenments passed to it
- * @argc: arguemnet count
- * @argv: array of pointer to arguement strings
- * Return: 0
- **/
-int main(int argc, char *argv[])
+ * main - a program that prints the number of arguments passed into it
+ *
+ * @argc: number of arguments passed to the program
+ * @argv: array of arguments passed to the program
+ *
+ * Return: EXIT_SUCCESS
+ * aUTHOR: IanoNjuguna
+ */
+
+int main(int argc, char **argv __attribute__((unused)))
 {
-/* to suppress unused variable warning */
-	argv = argv;
-	printf("%d\n", argc - 1);
-	return (0);
+	printf("%d\n", argc = argc - 1);
+	exit(EXIT_SUCCESS);
 }
+
