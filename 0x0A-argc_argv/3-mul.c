@@ -1,34 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * main - multiplies two integers
- *
- * @argc: number of arguments passed to the program
- * @argv: array of arguments passed to the program
- *
- * Return: EXIT_SUCCESS
- * Author: IanoNjuguna
- */
 
+/**
+ * main - entry point
+ *	print the result of multiplying two
+ *	integers supplied as cli arguments.
+ * @argc: number of cli args
+ * @argv: list of cli args
+ * Return: 0 is two arguments were supplied else 1
+ */
 int main(int argc, char *argv[])
 {
-	while (argc > 1)
-	{
-		int arg1, arg2, result;
+	int a, b;
 
-		arg1 = atoi(argv[1]);
-		arg2 = atoi(argv[2]);
-		result = arg1 * arg2;
-
-		printf("%d\n", result);
-		return (0);
-	}
-
-	if (argc < 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	exit(EXIT_SUCCESS);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	printf("%d\n", a * b);
+	return (0);
 }
