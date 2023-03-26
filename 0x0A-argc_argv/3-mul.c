@@ -12,11 +12,17 @@
 
 int main(int argc, char *argv[])
 {
-	int arg1, arg2, result;
+	while (argc > 1)
+	{
+		int arg1, arg2, result;
 
-	arg1 = atoi(argv[1]);
-	arg2 = atoi(argv[2]);
-	result = arg1 * arg2;
+		arg1 = atoi(argv[1]);
+		arg2 = atoi(argv[2]);
+		result = arg1 * arg2;
+
+		printf("%d\n", result);
+		return (0);
+	}
 
 	if (argc < 3)
 	{
@@ -24,6 +30,5 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	printf("%d\n", result);
-	return (0);
+	exit(EXIT_SUCCESS);
 }
