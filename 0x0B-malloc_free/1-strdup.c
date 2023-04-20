@@ -10,10 +10,18 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int size = strlen(str) + 1;
-	char *str0 = (char *) malloc(sizeof(char) * size);
+	unsigned int size;
+	char *str0;
 
-	if (str == NULL || str0 == NULL || size == 0)
+	if (str == NULL)
+		return (NULL);
+
+	size = strlen(str) + 1;
+	str0 = (char *) malloc(sizeof(char) * size);
+
+
+
+	if (str0 == NULL || size == 0)
 		return (NULL);
 
 	strcpy(str0, str);
