@@ -3,6 +3,9 @@
  * create_array - creates an array of chars,
  *				  and initializes it with a specific char
  *
+ * @size: length of the array
+ * @c: char to initialize the array with
+ *
  * Return: pointer to the array (Success) or NULL (Fail)
  * Author: IanoNjuguna
  */
