@@ -22,7 +22,7 @@ void print_times_table(int n)
 	{
 		for (count2 = 0; count2 <= n; count2++)
 			{
-				printf("%d", count1 * count2);
+				printf("%2d", count1 * count2);
 
 				if (count2 == n)
 				{
