@@ -23,30 +23,16 @@ void print_times_table(int n)
 		for (count2 = 0; count2 <= n; count2++)
 			{
 				result = count2 * count1;
-				if (result < 10)
-				{
-					printf("%2d", result);
-				}
-				else if (result < 100)
-				{
-					printf("%1d", result);
-				}
-				else
-				{
-					printf("%d", result);
-				}
+				
+				printf("%d", result);
 
-				if (count2 == n)
-				{
-					printf(" ");
-				}
-				else
+				if (count2 != n)
 				{
 					printf(",");
 				}
-			}
 			printf("\n");
-		}
-	printf("\n");
+			}
+		printf("\n");
+	}
 }
 
