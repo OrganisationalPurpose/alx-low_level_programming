@@ -11,7 +11,7 @@
 
 void print_times_table(int n)
 {
-	int count1, count2; /* loop control variables */
+	int count1, count2, result; /* loop control variables */
 
 	if (n < 0 || n > 15)
 	{
